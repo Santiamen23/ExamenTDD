@@ -54,9 +54,39 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b6d964a7f996660cc0510d49b8509a15692840ea",
     "commitName": "feat: aplicar descuento segun precio neto (ciclo 2)",
     "commitTimestamp": 1788995920132,
     "testId": 1
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1788996323782,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1788996446503,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1788996593403,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar seleccion de estado con California por defecto (ciclo 3)",
+    "commitTimestamp": 1788996701949,
+    "testId": 2
   }
 ]

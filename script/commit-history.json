@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b6d964a7f996660cc0510d49b8509a15692840ea",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-09T23:18:36.000Z",
       "message": "feat: aplicar descuento segun precio neto (ciclo 2)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/b6d964a7f996660cc0510d49b8509a15692840ea"
     },
     "stats": {
       "total": 51,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-09T23:31:40.000Z",
+      "message": "feat: agregar seleccion de estado con California por defecto (ciclo 3)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
