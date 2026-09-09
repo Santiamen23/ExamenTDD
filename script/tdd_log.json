@@ -114,9 +114,39 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a3ae35c83ff5a24ef742a4ff741f37f74c34cbef",
     "commitName": "feat: aplicar impuesto segun estado seleccionado (ciclo 4)",
     "commitTimestamp": 1788997261523,
     "testId": 3
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1788997416901,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1788997511396,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1788997658239,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar seleccion de categoria con Varios por defecto (ciclo 5)",
+    "commitTimestamp": 1788998220450,
+    "testId": 4
   }
 ]
