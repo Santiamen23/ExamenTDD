@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html xml:lang="es">
   <head>
-    <title>Sumador</title>
+    <title>Precio neto</title>
   </head>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
+    <h1>Calculadora de compra</h1>
+    <form id="compra-form">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" />
+      <label for="precio-unitario">Precio por unidad:</label>
+      <input type="number" id="precio-unitario" step="any" />
+      <input type="submit" value="Calcular" id="calcular-button" />
     </form>
-    <div id="resultado-div"></div>
+    <p id="resultado-precio-neto"></p>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

@@ -1,15 +1,15 @@
-import sumar from "./sumador";
+import calcularPrecioNeto from "./precioNeto.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const cantidad = document.querySelector("#cantidad");
+const precioUnitario = document.querySelector("#precio-unitario");
+const form = document.querySelector("#compra-form");
+const resultadoPrecioNeto = document.querySelector("#resultado-precio-neto");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  resultadoPrecioNeto.textContent = calcularPrecioNeto(
+    Number(cantidad.value),
+    Number(precioUnitario.value)
+  );
 });

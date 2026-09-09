@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-09T23:03:46.000Z",
+      "message": "feat: calcular precio neto de la compra (ciclo 1)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 61,
+      "additions": 34,
+      "deletions": 27,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
