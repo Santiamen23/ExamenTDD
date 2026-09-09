@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b0a88b7f4f4777060ceae70fb96d7cfbc79d1e98",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-09T23:31:40.000Z",
       "message": "feat: agregar seleccion de estado con California por defecto (ciclo 3)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/b0a88b7f4f4777060ceae70fb96d7cfbc79d1e98"
     },
     "stats": {
       "total": 27,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-09T23:41:00.000Z",
+      "message": "feat: aplicar impuesto segun estado seleccionado (ciclo 4)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 30,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

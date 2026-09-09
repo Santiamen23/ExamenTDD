@@ -84,9 +84,39 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b0a88b7f4f4777060ceae70fb96d7cfbc79d1e98",
     "commitName": "feat: agregar seleccion de estado con California por defecto (ciclo 3)",
     "commitTimestamp": 1788996701949,
     "testId": 2
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1788996870958,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1788996976056,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1788997164847,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar impuesto segun estado seleccionado (ciclo 4)",
+    "commitTimestamp": 1788997261523,
+    "testId": 3
   }
 ]
