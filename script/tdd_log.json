@@ -24,9 +24,39 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d541c3cee412213e840088cd5cf8e53bfc507e22",
     "commitName": "feat: calcular precio neto de la compra (ciclo 1)",
     "commitTimestamp": 1788995028726,
     "testId": 0
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788995306439,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1788995409946,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1788995573002,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar descuento segun precio neto (ciclo 2)",
+    "commitTimestamp": 1788995920132,
+    "testId": 1
   }
 ]

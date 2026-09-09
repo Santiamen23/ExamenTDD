@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "d541c3cee412213e840088cd5cf8e53bfc507e22",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-09T23:03:46.000Z",
       "message": "feat: calcular precio neto de la compra (ciclo 1)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/d541c3cee412213e840088cd5cf8e53bfc507e22"
     },
     "stats": {
       "total": 61,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-09T23:18:36.000Z",
+      "message": "feat: aplicar descuento segun precio neto (ciclo 2)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 51,
+      "additions": 50,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }
