@@ -634,9 +634,23 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1fec57143ef7f762aa2a6e72d55cccb5717bc35b",
     "commitName": "feat: cancelar compra y limpiar datos ingresados (ciclo 20)",
     "commitTimestamp": 1789010864312,
     "testId": 19
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 0,
+    "numTotalTests": 128,
+    "timestamp": 1789011015177,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar tarifa de envio por unidad (ciclo 21)",
+    "commitTimestamp": 1789011106230,
+    "testId": 20
   }
 ]

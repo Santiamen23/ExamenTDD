@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1fec57143ef7f762aa2a6e72d55cccb5717bc35b",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:27:43.000Z",
       "message": "feat: cancelar compra y limpiar datos ingresados (ciclo 20)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/1fec57143ef7f762aa2a6e72d55cccb5717bc35b"
     },
     "stats": {
       "total": 89,
@@ -376,6 +376,25 @@
     },
     "coverage": 100,
     "test_count": 121,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:31:44.000Z",
+      "message": "feat: mostrar tarifa de envio por unidad (ciclo 21)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 128,
     "failed_tests": 0,
     "conclusion": "success"
   }
