@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8cb047e599a0be69654fabbd1a4f0b34c841caa5",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-09T23:56:58.000Z",
       "message": "feat: agregar seleccion de categoria con Varios por defecto (ciclo 5)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/8cb047e599a0be69654fabbd1a4f0b34c841caa5"
     },
     "stats": {
       "total": 44,
@@ -91,6 +91,25 @@
     },
     "coverage": 100,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T00:09:17.000Z",
+      "message": "feat: aplicar descuento adicional segun categoria (ciclo 6)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 41,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

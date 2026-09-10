@@ -144,9 +144,39 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8cb047e599a0be69654fabbd1a4f0b34c841caa5",
     "commitName": "feat: agregar seleccion de categoria con Varios por defecto (ciclo 5)",
     "commitTimestamp": 1788998220450,
     "testId": 4
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1788998616958,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1788998718160,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1788998860346,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar descuento adicional segun categoria (ciclo 6)",
+    "commitTimestamp": 1788998959004,
+    "testId": 5
   }
 ]
