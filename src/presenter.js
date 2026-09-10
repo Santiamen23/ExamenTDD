@@ -88,32 +88,43 @@ form.addEventListener("submit", (event) => {
   errorPeso.textContent = validarPesoVolumetrico(pesoIngresado)
     ? ""
     : "Peso volumétrico inválido";
-  resultadoPrecioNeto.textContent = formatearMoneda(precioNeto);
-  resultadoDescuento.textContent = obtenerTasaDescuento(precioNeto);
-  resultadoImpuesto.textContent = obtenerTasaImpuesto(estado.value);
-  resultadoDescuentoCategoria.textContent = obtenerDescuentoCategoria(
-    categoria.value
-  );
-  resultadoImpuestoCategoria.textContent =
-    obtenerImpuestoAdicionalCategoria(categoria.value);
-  resultadoTarifaEnvio.textContent = obtenerTarifaEnvio(pesoIngresado);
+  resultadoPrecioNeto.textContent = `Precio neto: ${formatearMoneda(
+    precioNeto
+  )}`;
+  resultadoDescuento.textContent = `Descuento por monto: ${
+    obtenerTasaDescuento(precioNeto) * 100
+  }%`;
+  resultadoImpuesto.textContent = `Impuesto estatal: ${
+    obtenerTasaImpuesto(estado.value) * 100
+  }%`;
+  resultadoDescuentoCategoria.textContent = `Descuento por categoría: ${
+    obtenerDescuentoCategoria(categoria.value) * 100
+  }%`;
+  resultadoImpuestoCategoria.textContent = `Impuesto adicional por categoría: ${
+    obtenerImpuestoAdicionalCategoria(categoria.value) * 100
+  }%`;
+  resultadoTarifaEnvio.textContent = `Tarifa de envío por unidad: ${formatearMoneda(
+    obtenerTarifaEnvio(pesoIngresado)
+  )}`;
   const envioBase = calcularCostoEnvio(
     cantidadIngresada,
     pesoIngresado
   );
-  resultadoCostoEnvio.textContent = formatearMoneda(envioBase);
-  resultadoDescuentoEnvio.textContent = formatearMoneda(
+  resultadoCostoEnvio.textContent = `Costo de envío base: ${formatearMoneda(
+    envioBase
+  )}`;
+  resultadoDescuentoEnvio.textContent = `Descuento de envío: ${formatearMoneda(
     calcularDescuentoEnvio(
     envioBase,
     tipoCliente.value
     )
-  );
-  resultadoEnvioFinal.textContent = formatearMoneda(
+  )}`;
+  resultadoEnvioFinal.textContent = `Envío final: ${formatearMoneda(
     calcularEnvioFinal(envioBase, tipoCliente.value)
-  );
-  resultadoDescuentoEspecial.textContent = formatearMoneda(
+  )}`;
+  resultadoDescuentoEspecial.textContent = `Descuento fijo especial: ${formatearMoneda(
     obtenerDescuentoEspecial(tipoCliente.value, precioNeto, categoria.value)
-  );
+  )}`;
   const datosVenta = {
     cantidad: cantidadIngresada,
     precioUnitario: precioUnitarioIngresado,
@@ -126,31 +137,15 @@ form.addEventListener("submit", (event) => {
   errorInformacion.textContent = validacionInformacion.valido
     ? ""
     : `Falta: ${validacionInformacion.faltantes.join(", ")}`;
-  resultadoPrecioTotal.textContent = formatearMoneda(
+  resultadoPrecioTotal.textContent = `Precio total: ${formatearMoneda(
     calcularPrecioTotal(datosVenta)
-  );
+  )}`;
   const detalle = crearDetalleVenta(datosVenta);
   ultimoDetalle = detalle;
-  resultadoAhorro.textContent = formatearMoneda(
+  resultadoAhorro.textContent = `Total ahorrado: ${formatearMoneda(
     calcularMontoTotalAhorrado(detalle)
-  );
-  const detalleMostrado = {
-    ...detalle,
-    precioNeto: formatearMoneda(detalle.precioNeto),
-    montoDescuentoPorcentual: formatearMoneda(
-      detalle.montoDescuentoPorcentual
-    ),
-    precioTrasDescuentos: formatearMoneda(detalle.precioTrasDescuentos),
-    descuentoFijoEspecial: formatearMoneda(detalle.descuentoFijoEspecial),
-    baseImponible: formatearMoneda(detalle.baseImponible),
-    impuestos: formatearMoneda(detalle.impuestos),
-    tarifaEnvio: formatearMoneda(detalle.tarifaEnvio),
-    envioBase: formatearMoneda(detalle.envioBase),
-    descuentoEnvio: formatearMoneda(detalle.descuentoEnvio),
-    envioFinal: formatearMoneda(detalle.envioFinal),
-    precioTotal: formatearMoneda(detalle.precioTotal),
-  };
-  detalleCalculo.textContent = JSON.stringify(detalleMostrado);
+  )}`;
+  detalleCalculo.textContent = generarTextoDetalle(detalle);
 });
 
 cancelarButton.addEventListener("click", () => {

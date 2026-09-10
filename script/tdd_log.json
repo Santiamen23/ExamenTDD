@@ -792,9 +792,23 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "19658b7af3c54eaf30766789891b696277890def",
     "commitName": "feat: permitir copiar el detalle del calculo (ciclo 25)",
     "commitTimestamp": 1789013900631,
     "testId": 24
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 0,
+    "numTotalTests": 141,
+    "timestamp": 1789014289088,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: explicar resultados de la compra en el indice",
+    "commitTimestamp": 1789014388049,
+    "testId": 25
   }
 ]
