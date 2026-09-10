@@ -7,6 +7,14 @@ function obtenerDescuentoEspecial(tipoCliente, precioNeto, categoria) {
     return 100;
   }
 
+  if (
+    tipoCliente === "Especial" &&
+    precioNeto > 7000 &&
+    categoria === "Electrónicos"
+  ) {
+    return 200;
+  }
+
   return 0;
 }
 

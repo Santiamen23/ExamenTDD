@@ -17,4 +17,46 @@ describe("obtenerDescuentoEspecial", () => {
       ).toBe(descuento);
     }
   );
+
+  it("aplica 200 a Especial con más de 7000 en Electrónicos", () => {
+    expect(
+      obtenerDescuentoEspecial("Especial", 7000.01, "Electrónicos")
+    ).toBe(200);
+  });
+
+  it("aplica 200 a Especial con 10000 en Electrónicos", () => {
+    expect(
+      obtenerDescuentoEspecial("Especial", 10000, "Electrónicos")
+    ).toBe(200);
+  });
+
+  it("no aplica en el límite de 7000", () => {
+    expect(
+      obtenerDescuentoEspecial("Especial", 7000, "Electrónicos")
+    ).toBe(0);
+  });
+
+  it("no aplica a Normal en Electrónicos", () => {
+    expect(
+      obtenerDescuentoEspecial("Normal", 10000, "Electrónicos")
+    ).toBe(0);
+  });
+
+  it("no aplica a Recurrente en Electrónicos", () => {
+    expect(
+      obtenerDescuentoEspecial("Recurrente", 10000, "Electrónicos")
+    ).toBe(0);
+  });
+
+  it("no aplica a Especial en Alimentos", () => {
+    expect(
+      obtenerDescuentoEspecial("Especial", 10000, "Alimentos")
+    ).toBe(0);
+  });
+
+  it("no aplica a Especial en Varios", () => {
+    expect(
+      obtenerDescuentoEspecial("Especial", 10000, "Varios")
+    ).toBe(0);
+  });
 });
