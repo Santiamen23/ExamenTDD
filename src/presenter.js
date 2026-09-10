@@ -7,12 +7,14 @@ import obtenerDescuentoCategoria from "./descuentoCategoria.js";
 import obtenerImpuestoAdicionalCategoria from "./impuestoCategoria.js";
 import conservarPesoVolumetrico from "./pesoVolumetrico.js";
 import { obtenerTarifaEnvio, calcularCostoEnvio } from "./envio.js";
+import { TIPO_CLIENTE_POR_DEFECTO } from "./tipoCliente.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
 const pesoVolumetrico = document.querySelector("#peso-volumetrico");
 const estado = document.querySelector("#estado");
 const categoria = document.querySelector("#categoria");
+const tipoCliente = document.querySelector("#tipo-cliente");
 const form = document.querySelector("#compra-form");
 const resultadoPrecioNeto = document.querySelector("#resultado-precio-neto");
 const resultadoDescuento = document.querySelector("#resultado-descuento");
@@ -28,6 +30,7 @@ const resultadoCostoEnvio = document.querySelector("#resultado-costo-envio");
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
+tipoCliente.value = TIPO_CLIENTE_POR_DEFECTO;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

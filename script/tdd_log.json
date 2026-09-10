@@ -280,9 +280,39 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "749f94baf30a729b62ba1bf91e3eb62ae2ecae3a",
     "commitName": "feat: calcular costo de envio segun peso y cantidad (ciclo 9)",
     "commitTimestamp": 1789000971783,
     "testId": 8
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1789004216424,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1789004317708,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1789004508870,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar seleccion de tipo de cliente con Normal por defecto (ciclo 10)",
+    "commitTimestamp": 1789004640462,
+    "testId": 9
   }
 ]

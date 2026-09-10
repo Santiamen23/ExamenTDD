@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "749f94baf30a729b62ba1bf91e3eb62ae2ecae3a",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T00:42:48.000Z",
       "message": "feat: calcular costo de envio segun peso y cantidad (ciclo 9)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/749f94baf30a729b62ba1bf91e3eb62ae2ecae3a"
     },
     "stats": {
       "total": 93,
@@ -167,6 +167,25 @@
     },
     "coverage": 100,
     "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T01:43:59.000Z",
+      "message": "feat: agregar seleccion de tipo de cliente con Normal por defecto (ciclo 10)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 38,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 61,
     "failed_tests": 0,
     "conclusion": "success"
   }
