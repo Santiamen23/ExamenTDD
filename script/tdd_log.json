@@ -686,9 +686,39 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "898b6fa6c9ced78401da347d66bcf601af3b95e8",
     "commitName": "feat: calcular monto total ahorrado por descuentos (ciclo 22)",
     "commitTimestamp": 1789011730242,
     "testId": 21
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1789011886587,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1789011987143,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 137,
+    "failedTests": 0,
+    "numTotalTests": 137,
+    "timestamp": 1789012277858,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: formatear valores monetarios con dos decimales (ciclo 23)",
+    "commitTimestamp": 1789012420656,
+    "testId": 22
   }
 ]

@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "898b6fa6c9ced78401da347d66bcf601af3b95e8",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:42:09.000Z",
       "message": "feat: calcular monto total ahorrado por descuentos (ciclo 22)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/898b6fa6c9ced78401da347d66bcf601af3b95e8"
     },
     "stats": {
       "total": 80,
@@ -414,6 +414,25 @@
     },
     "coverage": 100,
     "test_count": 134,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:53:39.000Z",
+      "message": "feat: formatear valores monetarios con dos decimales (ciclo 23)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 67,
+      "additions": 54,
+      "deletions": 13,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 137,
     "failed_tests": 0,
     "conclusion": "success"
   }

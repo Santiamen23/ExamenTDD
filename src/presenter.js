@@ -21,6 +21,7 @@ import validarPesoVolumetrico from "./validarPesoVolumetrico.js";
 import validarInformacionRequerida from "./validarInformacionRequerida.js";
 import reiniciarCompra from "./limpiarCompra.js";
 import calcularMontoTotalAhorrado from "./ahorro.js";
+import formatearMoneda from "./formatearMoneda.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -82,7 +83,7 @@ form.addEventListener("submit", (event) => {
   errorPeso.textContent = validarPesoVolumetrico(pesoIngresado)
     ? ""
     : "Peso volumétrico inválido";
-  resultadoPrecioNeto.textContent = precioNeto;
+  resultadoPrecioNeto.textContent = formatearMoneda(precioNeto);
   resultadoDescuento.textContent = obtenerTasaDescuento(precioNeto);
   resultadoImpuesto.textContent = obtenerTasaImpuesto(estado.value);
   resultadoDescuentoCategoria.textContent = obtenerDescuentoCategoria(
@@ -95,19 +96,18 @@ form.addEventListener("submit", (event) => {
     cantidadIngresada,
     pesoIngresado
   );
-  resultadoCostoEnvio.textContent = envioBase;
-  resultadoDescuentoEnvio.textContent = calcularDescuentoEnvio(
+  resultadoCostoEnvio.textContent = formatearMoneda(envioBase);
+  resultadoDescuentoEnvio.textContent = formatearMoneda(
+    calcularDescuentoEnvio(
     envioBase,
     tipoCliente.value
+    )
   );
-  resultadoEnvioFinal.textContent = calcularEnvioFinal(
-    envioBase,
-    tipoCliente.value
+  resultadoEnvioFinal.textContent = formatearMoneda(
+    calcularEnvioFinal(envioBase, tipoCliente.value)
   );
-  resultadoDescuentoEspecial.textContent = obtenerDescuentoEspecial(
-    tipoCliente.value,
-    precioNeto,
-    categoria.value
+  resultadoDescuentoEspecial.textContent = formatearMoneda(
+    obtenerDescuentoEspecial(tipoCliente.value, precioNeto, categoria.value)
   );
   const datosVenta = {
     cantidad: cantidadIngresada,
@@ -121,10 +121,30 @@ form.addEventListener("submit", (event) => {
   errorInformacion.textContent = validacionInformacion.valido
     ? ""
     : `Falta: ${validacionInformacion.faltantes.join(", ")}`;
-  resultadoPrecioTotal.textContent = calcularPrecioTotal(datosVenta);
+  resultadoPrecioTotal.textContent = formatearMoneda(
+    calcularPrecioTotal(datosVenta)
+  );
   const detalle = crearDetalleVenta(datosVenta);
-  resultadoAhorro.textContent = calcularMontoTotalAhorrado(detalle);
-  detalleCalculo.textContent = JSON.stringify(detalle);
+  resultadoAhorro.textContent = formatearMoneda(
+    calcularMontoTotalAhorrado(detalle)
+  );
+  const detalleMostrado = {
+    ...detalle,
+    precioNeto: formatearMoneda(detalle.precioNeto),
+    montoDescuentoPorcentual: formatearMoneda(
+      detalle.montoDescuentoPorcentual
+    ),
+    precioTrasDescuentos: formatearMoneda(detalle.precioTrasDescuentos),
+    descuentoFijoEspecial: formatearMoneda(detalle.descuentoFijoEspecial),
+    baseImponible: formatearMoneda(detalle.baseImponible),
+    impuestos: formatearMoneda(detalle.impuestos),
+    tarifaEnvio: formatearMoneda(detalle.tarifaEnvio),
+    envioBase: formatearMoneda(detalle.envioBase),
+    descuentoEnvio: formatearMoneda(detalle.descuentoEnvio),
+    envioFinal: formatearMoneda(detalle.envioFinal),
+    precioTotal: formatearMoneda(detalle.precioTotal),
+  };
+  detalleCalculo.textContent = JSON.stringify(detalleMostrado);
 });
 
 cancelarButton.addEventListener("click", () => {
