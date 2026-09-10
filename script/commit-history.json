@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d49ddf2d11739998545444bb23fa00b767219728",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T01:43:59.000Z",
       "message": "feat: agregar seleccion de tipo de cliente con Normal por defecto (ciclo 10)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/d49ddf2d11739998545444bb23fa00b767219728"
     },
     "stats": {
       "total": 38,
@@ -186,6 +186,25 @@
     },
     "coverage": 100,
     "test_count": 61,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T01:59:24.000Z",
+      "message": "feat: aplicar descuento de envio segun tipo de cliente (ciclo 11)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 80,
+      "additions": 79,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 73,
     "failed_tests": 0,
     "conclusion": "success"
   }

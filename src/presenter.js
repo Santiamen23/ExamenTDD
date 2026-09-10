@@ -8,6 +8,10 @@ import obtenerImpuestoAdicionalCategoria from "./impuestoCategoria.js";
 import conservarPesoVolumetrico from "./pesoVolumetrico.js";
 import { obtenerTarifaEnvio, calcularCostoEnvio } from "./envio.js";
 import { TIPO_CLIENTE_POR_DEFECTO } from "./tipoCliente.js";
+import {
+  calcularDescuentoEnvio,
+  calcularEnvioFinal,
+} from "./descuentoEnvio.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
@@ -27,6 +31,10 @@ const resultadoImpuestoCategoria = document.querySelector(
 );
 const resultadoTarifaEnvio = document.querySelector("#resultado-tarifa-envio");
 const resultadoCostoEnvio = document.querySelector("#resultado-costo-envio");
+const resultadoDescuentoEnvio = document.querySelector(
+  "#resultado-descuento-envio"
+);
+const resultadoEnvioFinal = document.querySelector("#resultado-envio-final");
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
@@ -53,8 +61,17 @@ form.addEventListener("submit", (event) => {
   resultadoImpuestoCategoria.textContent =
     obtenerImpuestoAdicionalCategoria(categoria.value);
   resultadoTarifaEnvio.textContent = obtenerTarifaEnvio(pesoIngresado);
-  resultadoCostoEnvio.textContent = calcularCostoEnvio(
+  const envioBase = calcularCostoEnvio(
     cantidadIngresada,
     pesoIngresado
+  );
+  resultadoCostoEnvio.textContent = envioBase;
+  resultadoDescuentoEnvio.textContent = calcularDescuentoEnvio(
+    envioBase,
+    tipoCliente.value
+  );
+  resultadoEnvioFinal.textContent = calcularEnvioFinal(
+    envioBase,
+    tipoCliente.value
   );
 });
