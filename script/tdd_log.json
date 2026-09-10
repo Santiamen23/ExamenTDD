@@ -174,9 +174,47 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "408d3eaf7930c9f977c1b4a7b3b29ba43f96c257",
     "commitName": "feat: aplicar descuento adicional segun categoria (ciclo 6)",
     "commitTimestamp": 1788998959004,
     "testId": 5
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1788999437118,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1788999536895,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1788999632577,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1788999782393,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar impuesto adicional segun categoria (ciclo 7)",
+    "commitTimestamp": 1788999881561,
+    "testId": 6
   }
 ]

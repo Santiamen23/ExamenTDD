@@ -4,6 +4,7 @@ import { ESTADO_POR_DEFECTO } from "./estado.js";
 import obtenerTasaImpuesto from "./impuesto.js";
 import { CATEGORIA_POR_DEFECTO } from "./categoria.js";
 import obtenerDescuentoCategoria from "./descuentoCategoria.js";
+import obtenerImpuestoAdicionalCategoria from "./impuestoCategoria.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
@@ -15,6 +16,9 @@ const resultadoDescuento = document.querySelector("#resultado-descuento");
 const resultadoImpuesto = document.querySelector("#resultado-impuesto");
 const resultadoDescuentoCategoria = document.querySelector(
   "#resultado-descuento-categoria"
+);
+const resultadoImpuestoCategoria = document.querySelector(
+  "#resultado-impuesto-categoria"
 );
 
 estado.value = ESTADO_POR_DEFECTO;
@@ -34,4 +38,6 @@ form.addEventListener("submit", (event) => {
   resultadoDescuentoCategoria.textContent = obtenerDescuentoCategoria(
     categoria.value
   );
+  resultadoImpuestoCategoria.textContent =
+    obtenerImpuestoAdicionalCategoria(categoria.value);
 });

@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "408d3eaf7930c9f977c1b4a7b3b29ba43f96c257",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T00:09:17.000Z",
       "message": "feat: aplicar descuento adicional segun categoria (ciclo 6)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/408d3eaf7930c9f977c1b4a7b3b29ba43f96c257"
     },
     "stats": {
       "total": 41,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T00:24:40.000Z",
+      "message": "feat: aplicar impuesto adicional segun categoria (ciclo 7)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 36,
     "failed_tests": 0,
     "conclusion": "success"
   }
