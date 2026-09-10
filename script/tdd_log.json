@@ -648,9 +648,47 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4b1a9083b55aca65ea1bb62a4a59225db27e7b2",
     "commitName": "feat: mostrar tarifa de envio por unidad (ciclo 21)",
     "commitTimestamp": 1789011106230,
     "testId": 20
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 0,
+    "numTotalTests": 128,
+    "timestamp": 1789011258730,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 0,
+    "numTotalTests": 128,
+    "timestamp": 1789011366385,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1789011469149,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1789011620375,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular monto total ahorrado por descuentos (ciclo 22)",
+    "commitTimestamp": 1789011730242,
+    "testId": 21
   }
 ]

@@ -20,6 +20,7 @@ import validarPrecio from "./validarPrecio.js";
 import validarPesoVolumetrico from "./validarPesoVolumetrico.js";
 import validarInformacionRequerida from "./validarInformacionRequerida.js";
 import reiniciarCompra from "./limpiarCompra.js";
+import calcularMontoTotalAhorrado from "./ahorro.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -51,6 +52,7 @@ const resultadoDescuentoEspecial = document.querySelector(
   "#resultado-descuento-especial"
 );
 const resultadoPrecioTotal = document.querySelector("#resultado-precio-total");
+const resultadoAhorro = document.querySelector("#resultado-ahorro");
 const errorInformacion = document.querySelector("#error-informacion");
 const detalleCalculo = document.querySelector("#detalle-calculo");
 
@@ -120,7 +122,9 @@ form.addEventListener("submit", (event) => {
     ? ""
     : `Falta: ${validacionInformacion.faltantes.join(", ")}`;
   resultadoPrecioTotal.textContent = calcularPrecioTotal(datosVenta);
-  detalleCalculo.textContent = JSON.stringify(crearDetalleVenta(datosVenta));
+  const detalle = crearDetalleVenta(datosVenta);
+  resultadoAhorro.textContent = calcularMontoTotalAhorrado(detalle);
+  detalleCalculo.textContent = JSON.stringify(detalle);
 });
 
 cancelarButton.addEventListener("click", () => {
@@ -145,6 +149,7 @@ cancelarButton.addEventListener("click", () => {
     resultadoEnvioFinal,
     resultadoDescuentoEspecial,
     resultadoPrecioTotal,
+    resultadoAhorro,
     errorCantidad,
     errorPrecio,
     errorPeso,

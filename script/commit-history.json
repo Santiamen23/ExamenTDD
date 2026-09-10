@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e4b1a9083b55aca65ea1bb62a4a59225db27e7b2",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:31:44.000Z",
       "message": "feat: mostrar tarifa de envio por unidad (ciclo 21)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/e4b1a9083b55aca65ea1bb62a4a59225db27e7b2"
     },
     "stats": {
       "total": 15,
@@ -395,6 +395,25 @@
     },
     "coverage": 100,
     "test_count": 128,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:42:09.000Z",
+      "message": "feat: calcular monto total ahorrado por descuentos (ciclo 22)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 80,
+      "additions": 79,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 134,
     "failed_tests": 0,
     "conclusion": "success"
   }
