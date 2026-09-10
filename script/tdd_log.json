@@ -212,9 +212,47 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fb39cc686a07f52810befaafff8da38b37eab7f2",
     "commitName": "feat: aplicar impuesto adicional segun categoria (ciclo 7)",
     "commitTimestamp": 1788999881561,
     "testId": 6
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1789000065394,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1789000098984,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1789000197448,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1789000299366,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: permitir ingreso de peso volumetrico por unidad (ciclo 8)",
+    "commitTimestamp": 1789000405695,
+    "testId": 7
   }
 ]

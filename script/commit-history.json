@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fb39cc686a07f52810befaafff8da38b37eab7f2",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T00:24:40.000Z",
       "message": "feat: aplicar impuesto adicional segun categoria (ciclo 7)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/fb39cc686a07f52810befaafff8da38b37eab7f2"
     },
     "stats": {
       "total": 40,
@@ -129,6 +129,25 @@
     },
     "coverage": 100,
     "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T00:33:22.000Z",
+      "message": "feat: permitir ingreso de peso volumetrico por unidad (ciclo 8)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"
   }
