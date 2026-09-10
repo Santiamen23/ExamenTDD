@@ -22,6 +22,7 @@ import validarInformacionRequerida from "./validarInformacionRequerida.js";
 import reiniciarCompra from "./limpiarCompra.js";
 import calcularMontoTotalAhorrado from "./ahorro.js";
 import formatearMoneda from "./formatearMoneda.js";
+import obtenerDatosEjemplo from "./datosEjemplo.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -34,6 +35,7 @@ const categoria = document.querySelector("#categoria");
 const tipoCliente = document.querySelector("#tipo-cliente");
 const form = document.querySelector("#compra-form");
 const cancelarButton = document.querySelector("#cancelar-button");
+const cargarEjemploButton = document.querySelector("#cargar-ejemplo-button");
 const resultadoPrecioNeto = document.querySelector("#resultado-precio-neto");
 const resultadoDescuento = document.querySelector("#resultado-descuento");
 const resultadoImpuesto = document.querySelector("#resultado-impuesto");
@@ -178,4 +180,15 @@ cancelarButton.addEventListener("click", () => {
   ].forEach((elemento) => {
     elemento.textContent = "";
   });
+});
+
+cargarEjemploButton.addEventListener("click", () => {
+  const datosEjemplo = obtenerDatosEjemplo();
+
+  cantidad.value = datosEjemplo.cantidad;
+  precioUnitario.value = datosEjemplo.precioUnitario;
+  pesoVolumetrico.value = datosEjemplo.pesoVolumetrico;
+  estado.value = datosEjemplo.estado;
+  categoria.value = datosEjemplo.categoria;
+  tipoCliente.value = datosEjemplo.tipoCliente;
 });

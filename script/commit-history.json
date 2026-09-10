@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe125eeebac06e51d4f0a29ad9c8e3094d3241a2",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:53:39.000Z",
       "message": "feat: formatear valores monetarios con dos decimales (ciclo 23)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/fe125eeebac06e51d4f0a29ad9c8e3094d3241a2"
     },
     "stats": {
       "total": 67,
@@ -433,6 +433,25 @@
     },
     "coverage": 100,
     "test_count": 137,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T04:05:02.000Z",
+      "message": "feat: cargar datos de ejemplo para una compra (ciclo 24)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 55,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 139,
     "failed_tests": 0,
     "conclusion": "success"
   }

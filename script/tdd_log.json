@@ -716,9 +716,47 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fe125eeebac06e51d4f0a29ad9c8e3094d3241a2",
     "commitName": "feat: formatear valores monetarios con dos decimales (ciclo 23)",
     "commitTimestamp": 1789012420656,
     "testId": 22
+  },
+  {
+    "numPassedTests": 137,
+    "failedTests": 0,
+    "numTotalTests": 137,
+    "timestamp": 1789012613936,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 137,
+    "failedTests": 0,
+    "numTotalTests": 137,
+    "timestamp": 1789012732473,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 139,
+    "failedTests": 0,
+    "numTotalTests": 139,
+    "timestamp": 1789012846141,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 139,
+    "failedTests": 0,
+    "numTotalTests": 139,
+    "timestamp": 1789013002438,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: cargar datos de ejemplo para una compra (ciclo 24)",
+    "commitTimestamp": 1789013103314,
+    "testId": 23
   }
 ]
