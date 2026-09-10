@@ -12,6 +12,7 @@ import {
   calcularDescuentoEnvio,
   calcularEnvioFinal,
 } from "./descuentoEnvio.js";
+import obtenerDescuentoEspecial from "./beneficioEspecial.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
@@ -35,6 +36,9 @@ const resultadoDescuentoEnvio = document.querySelector(
   "#resultado-descuento-envio"
 );
 const resultadoEnvioFinal = document.querySelector("#resultado-envio-final");
+const resultadoDescuentoEspecial = document.querySelector(
+  "#resultado-descuento-especial"
+);
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
@@ -73,5 +77,10 @@ form.addEventListener("submit", (event) => {
   resultadoEnvioFinal.textContent = calcularEnvioFinal(
     envioBase,
     tipoCliente.value
+  );
+  resultadoDescuentoEspecial.textContent = obtenerDescuentoEspecial(
+    tipoCliente.value,
+    precioNeto,
+    categoria.value
   );
 });

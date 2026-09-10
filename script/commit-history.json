@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f5a68d23751c1562e25f31738b4bd2af1ad3ca8f",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T01:59:24.000Z",
       "message": "feat: aplicar descuento de envio segun tipo de cliente (ciclo 11)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/f5a68d23751c1562e25f31738b4bd2af1ad3ca8f"
     },
     "stats": {
       "total": 80,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 73,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T02:07:11.000Z",
+      "message": "feat: aplicar descuento especial a cliente Recurrente en Alimentos (ciclo 12)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 43,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 80,
     "failed_tests": 0,
     "conclusion": "success"
   }

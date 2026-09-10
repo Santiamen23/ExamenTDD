@@ -340,9 +340,31 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f5a68d23751c1562e25f31738b4bd2af1ad3ca8f",
     "commitName": "feat: aplicar descuento de envio segun tipo de cliente (ciclo 11)",
     "commitTimestamp": 1789005566063,
     "testId": 10
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 0,
+    "numTotalTests": 73,
+    "timestamp": 1789005754704,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1789005937526,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar descuento especial a cliente Recurrente en Alimentos (ciclo 12)",
+    "commitTimestamp": 1789006032519,
+    "testId": 11
   }
 ]
