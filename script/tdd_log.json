@@ -484,9 +484,39 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f62482b9162c6b1e4ca562118f1729e37b768c3f",
     "commitName": "feat: mostrar detalle completo del calculo de la compra (ciclo 15)",
     "commitTimestamp": 1789008172613,
     "testId": 14
+  },
+  {
+    "numPassedTests": 94,
+    "failedTests": 0,
+    "numTotalTests": 94,
+    "timestamp": 1789008318492,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 100,
+    "failedTests": 0,
+    "numTotalTests": 100,
+    "timestamp": 1789008424999,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 100,
+    "failedTests": 0,
+    "numTotalTests": 100,
+    "timestamp": 1789008574052,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar cantidad de productos (ciclo 16)",
+    "commitTimestamp": 1789008671344,
+    "testId": 15
   }
 ]

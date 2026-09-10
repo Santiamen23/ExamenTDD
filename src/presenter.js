@@ -15,8 +15,10 @@ import {
 import obtenerDescuentoEspecial from "./beneficioEspecial.js";
 import calcularPrecioTotal from "./precioTotal.js";
 import crearDetalleVenta from "./detalleVenta.js";
+import validarCantidad from "./validarCantidad.js";
 
 const cantidad = document.querySelector("#cantidad");
+const errorCantidad = document.querySelector("#error-cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
 const pesoVolumetrico = document.querySelector("#peso-volumetrico");
 const estado = document.querySelector("#estado");
@@ -60,6 +62,9 @@ form.addEventListener("submit", (event) => {
     Number(precioUnitario.value)
   );
 
+  errorCantidad.textContent = validarCantidad(cantidadIngresada)
+    ? ""
+    : "Cantidad inválida";
   resultadoPrecioNeto.textContent = precioNeto;
   resultadoDescuento.textContent = obtenerTasaDescuento(precioNeto);
   resultadoImpuesto.textContent = obtenerTasaImpuesto(estado.value);

@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f62482b9162c6b1e4ca562118f1729e37b768c3f",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T02:42:51.000Z",
       "message": "feat: mostrar detalle completo del calculo de la compra (ciclo 15)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/f62482b9162c6b1e4ca562118f1729e37b768c3f"
     },
     "stats": {
       "total": 112,
@@ -281,6 +281,25 @@
     },
     "coverage": 100,
     "test_count": 94,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T02:51:10.000Z",
+      "message": "feat: validar cantidad de productos (ciclo 16)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 100,
     "failed_tests": 0,
     "conclusion": "success"
   }
