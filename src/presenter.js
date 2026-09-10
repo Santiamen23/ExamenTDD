@@ -19,6 +19,7 @@ import validarCantidad from "./validarCantidad.js";
 import validarPrecio from "./validarPrecio.js";
 import validarPesoVolumetrico from "./validarPesoVolumetrico.js";
 import validarInformacionRequerida from "./validarInformacionRequerida.js";
+import reiniciarCompra from "./limpiarCompra.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -30,6 +31,7 @@ const estado = document.querySelector("#estado");
 const categoria = document.querySelector("#categoria");
 const tipoCliente = document.querySelector("#tipo-cliente");
 const form = document.querySelector("#compra-form");
+const cancelarButton = document.querySelector("#cancelar-button");
 const resultadoPrecioNeto = document.querySelector("#resultado-precio-neto");
 const resultadoDescuento = document.querySelector("#resultado-descuento");
 const resultadoImpuesto = document.querySelector("#resultado-impuesto");
@@ -119,4 +121,36 @@ form.addEventListener("submit", (event) => {
     : `Falta: ${validacionInformacion.faltantes.join(", ")}`;
   resultadoPrecioTotal.textContent = calcularPrecioTotal(datosVenta);
   detalleCalculo.textContent = JSON.stringify(crearDetalleVenta(datosVenta));
+});
+
+cancelarButton.addEventListener("click", () => {
+  const estadoInicial = reiniciarCompra();
+
+  cantidad.value = estadoInicial.cantidad;
+  precioUnitario.value = estadoInicial.precioUnitario;
+  pesoVolumetrico.value = estadoInicial.pesoVolumetrico;
+  estado.value = estadoInicial.estado;
+  categoria.value = estadoInicial.categoria;
+  tipoCliente.value = estadoInicial.tipoCliente;
+
+  [
+    resultadoPrecioNeto,
+    resultadoDescuento,
+    resultadoImpuesto,
+    resultadoDescuentoCategoria,
+    resultadoImpuestoCategoria,
+    resultadoTarifaEnvio,
+    resultadoCostoEnvio,
+    resultadoDescuentoEnvio,
+    resultadoEnvioFinal,
+    resultadoDescuentoEspecial,
+    resultadoPrecioTotal,
+    errorCantidad,
+    errorPrecio,
+    errorPeso,
+    errorInformacion,
+    detalleCalculo,
+  ].forEach((elemento) => {
+    elemento.textContent = "";
+  });
 });

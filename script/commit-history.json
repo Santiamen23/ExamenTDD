@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "86674185740f789952f63d74ac4d93a239984bf3",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:18:35.000Z",
       "message": "feat: validar informacion requerida para el calculo (ciclo 19)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/86674185740f789952f63d74ac4d93a239984bf3"
     },
     "stats": {
       "total": 100,
@@ -357,6 +357,25 @@
     },
     "coverage": 100,
     "test_count": 119,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:27:43.000Z",
+      "message": "feat: cancelar compra y limpiar datos ingresados (ciclo 20)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 89,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 121,
     "failed_tests": 0,
     "conclusion": "success"
   }

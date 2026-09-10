@@ -604,9 +604,39 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "86674185740f789952f63d74ac4d93a239984bf3",
     "commitName": "feat: validar informacion requerida para el calculo (ciclo 19)",
     "commitTimestamp": 1789010317092,
     "testId": 18
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1789010472720,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 121,
+    "failedTests": 0,
+    "numTotalTests": 121,
+    "timestamp": 1789010566255,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 121,
+    "failedTests": 0,
+    "numTotalTests": 121,
+    "timestamp": 1789010773272,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: cancelar compra y limpiar datos ingresados (ciclo 20)",
+    "commitTimestamp": 1789010864312,
+    "testId": 19
   }
 ]
