@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c56f24210be79f987b35e86048142bd3ae7d6b77",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T02:18:36.000Z",
       "message": "feat: aplicar descuento especial a cliente Especial en Electronicos (ciclo 13)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/c56f24210be79f987b35e86048142bd3ae7d6b77"
     },
     "stats": {
       "total": 50,
@@ -243,6 +243,25 @@
     },
     "coverage": 100,
     "test_count": 87,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T02:32:18.000Z",
+      "message": "feat: calcular precio total de la compra (ciclo 14)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 121,
+      "additions": 121,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 92,
     "failed_tests": 0,
     "conclusion": "success"
   }

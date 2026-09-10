@@ -400,9 +400,63 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c56f24210be79f987b35e86048142bd3ae7d6b77",
     "commitName": "feat: aplicar descuento especial a cliente Especial en Electronicos (ciclo 13)",
     "commitTimestamp": 1789006718052,
     "testId": 12
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 0,
+    "numTotalTests": 87,
+    "timestamp": 1789006886364,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 0,
+    "numTotalTests": 87,
+    "timestamp": 1789006998628,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 5,
+    "numTotalTests": 92,
+    "timestamp": 1789007098779,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 1,
+    "numTotalTests": 92,
+    "timestamp": 1789007207692,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 92,
+    "failedTests": 0,
+    "numTotalTests": 92,
+    "timestamp": 1789007303565,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 92,
+    "failedTests": 0,
+    "numTotalTests": 92,
+    "timestamp": 1789007441967,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total de la compra (ciclo 14)",
+    "commitTimestamp": 1789007539204,
+    "testId": 13
   }
 ]
