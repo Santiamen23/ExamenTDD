@@ -18,6 +18,7 @@ import crearDetalleVenta from "./detalleVenta.js";
 import validarCantidad from "./validarCantidad.js";
 import validarPrecio from "./validarPrecio.js";
 import validarPesoVolumetrico from "./validarPesoVolumetrico.js";
+import validarInformacionRequerida from "./validarInformacionRequerida.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -48,6 +49,7 @@ const resultadoDescuentoEspecial = document.querySelector(
   "#resultado-descuento-especial"
 );
 const resultadoPrecioTotal = document.querySelector("#resultado-precio-total");
+const errorInformacion = document.querySelector("#error-informacion");
 const detalleCalculo = document.querySelector("#detalle-calculo");
 
 estado.value = ESTADO_POR_DEFECTO;
@@ -111,6 +113,10 @@ form.addEventListener("submit", (event) => {
     pesoVolumetrico: pesoIngresado,
     tipoCliente: tipoCliente.value,
   };
+  const validacionInformacion = validarInformacionRequerida(datosVenta);
+  errorInformacion.textContent = validacionInformacion.valido
+    ? ""
+    : `Falta: ${validacionInformacion.faltantes.join(", ")}`;
   resultadoPrecioTotal.textContent = calcularPrecioTotal(datosVenta);
   detalleCalculo.textContent = JSON.stringify(crearDetalleVenta(datosVenta));
 });

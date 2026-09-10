@@ -574,9 +574,39 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ba75bd1b5da5e77e8566d1ce416a194447d07010",
     "commitName": "feat: validar peso volumetrico (ciclo 18)",
     "commitTimestamp": 1789009767266,
     "testId": 17
+  },
+  {
+    "numPassedTests": 114,
+    "failedTests": 0,
+    "numTotalTests": 114,
+    "timestamp": 1789009919366,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1789010078709,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1789010224564,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar informacion requerida para el calculo (ciclo 19)",
+    "commitTimestamp": 1789010317092,
+    "testId": 18
   }
 ]

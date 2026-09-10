@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ba75bd1b5da5e77e8566d1ce416a194447d07010",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:09:26.000Z",
       "message": "feat: validar peso volumetrico (ciclo 18)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/ba75bd1b5da5e77e8566d1ce416a194447d07010"
     },
     "stats": {
       "total": 32,
@@ -338,6 +338,25 @@
     },
     "coverage": 100,
     "test_count": 114,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:18:35.000Z",
+      "message": "feat: validar informacion requerida para el calculo (ciclo 19)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 100,
+      "additions": 100,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 119,
     "failed_tests": 0,
     "conclusion": "success"
   }
