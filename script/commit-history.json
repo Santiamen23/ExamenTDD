@@ -475,17 +475,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "292c680898689fc93756e215e1ed655dfcd45b0e",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T04:26:26.000Z",
       "message": "fix: explicar resultados de la compra en el indice",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/292c680898689fc93756e215e1ed655dfcd45b0e"
     },
     "stats": {
       "total": 115,
       "additions": 71,
       "deletions": 44,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 141,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T04:36:21.000Z",
+      "message": "fix: retirar detalle explicado del indice",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 0,
+      "deletions": 5,
       "date": "2026-09-10"
     },
     "coverage": 100,

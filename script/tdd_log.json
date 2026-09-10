@@ -806,9 +806,23 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "292c680898689fc93756e215e1ed655dfcd45b0e",
     "commitName": "fix: explicar resultados de la compra en el indice",
     "commitTimestamp": 1789014388049,
     "testId": 25
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 0,
+    "numTotalTests": 141,
+    "timestamp": 1789014868655,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: retirar detalle explicado del indice",
+    "commitTimestamp": 1789014987400,
+    "testId": 26
   }
 ]

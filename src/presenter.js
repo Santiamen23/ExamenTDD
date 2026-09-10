@@ -59,7 +59,6 @@ const resultadoDescuentoEspecial = document.querySelector(
 const resultadoPrecioTotal = document.querySelector("#resultado-precio-total");
 const resultadoAhorro = document.querySelector("#resultado-ahorro");
 const errorInformacion = document.querySelector("#error-informacion");
-const detalleCalculo = document.querySelector("#detalle-calculo");
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
@@ -145,7 +144,6 @@ form.addEventListener("submit", (event) => {
   resultadoAhorro.textContent = `Total ahorrado: ${formatearMoneda(
     calcularMontoTotalAhorrado(detalle)
   )}`;
-  detalleCalculo.textContent = generarTextoDetalle(detalle);
 });
 
 cancelarButton.addEventListener("click", () => {
@@ -176,7 +174,6 @@ cancelarButton.addEventListener("click", () => {
     errorPrecio,
     errorPeso,
     errorInformacion,
-    detalleCalculo,
   ].forEach((elemento) => {
     elemento.textContent = "";
   });
