@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "65fb674345637f08d88f9e454bfa61f7ff06fcfe",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T02:51:10.000Z",
       "message": "feat: validar cantidad de productos (ciclo 16)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/65fb674345637f08d88f9e454bfa61f7ff06fcfe"
     },
     "stats": {
       "total": 27,
@@ -300,6 +300,25 @@
     },
     "coverage": 100,
     "test_count": 100,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:01:17.000Z",
+      "message": "feat: validar precio por unidad (ciclo 17)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 39,
+      "deletions": 3,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 107,
     "failed_tests": 0,
     "conclusion": "success"
   }
