@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1dc4072a12f6ba29db6cc0999182a3c2c913ae20",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T03:01:17.000Z",
       "message": "feat: validar precio por unidad (ciclo 17)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/1dc4072a12f6ba29db6cc0999182a3c2c913ae20"
     },
     "stats": {
       "total": 42,
@@ -319,6 +319,25 @@
     },
     "coverage": 100,
     "test_count": 107,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T03:09:26.000Z",
+      "message": "feat: validar peso volumetrico (ciclo 18)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 114,
     "failed_tests": 0,
     "conclusion": "success"
   }

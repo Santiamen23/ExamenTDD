@@ -17,12 +17,14 @@ import calcularPrecioTotal from "./precioTotal.js";
 import crearDetalleVenta from "./detalleVenta.js";
 import validarCantidad from "./validarCantidad.js";
 import validarPrecio from "./validarPrecio.js";
+import validarPesoVolumetrico from "./validarPesoVolumetrico.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
 const errorPrecio = document.querySelector("#error-precio");
 const pesoVolumetrico = document.querySelector("#peso-volumetrico");
+const errorPeso = document.querySelector("#error-peso");
 const estado = document.querySelector("#estado");
 const categoria = document.querySelector("#categoria");
 const tipoCliente = document.querySelector("#tipo-cliente");
@@ -71,6 +73,9 @@ form.addEventListener("submit", (event) => {
   errorPrecio.textContent = validarPrecio(precioUnitarioIngresado)
     ? ""
     : "Precio inválido";
+  errorPeso.textContent = validarPesoVolumetrico(pesoIngresado)
+    ? ""
+    : "Peso volumétrico inválido";
   resultadoPrecioNeto.textContent = precioNeto;
   resultadoDescuento.textContent = obtenerTasaDescuento(precioNeto);
   resultadoImpuesto.textContent = obtenerTasaImpuesto(estado.value);

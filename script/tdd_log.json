@@ -544,9 +544,39 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1dc4072a12f6ba29db6cc0999182a3c2c913ae20",
     "commitName": "feat: validar precio por unidad (ciclo 17)",
     "commitTimestamp": 1789009278953,
     "testId": 16
+  },
+  {
+    "numPassedTests": 107,
+    "failedTests": 0,
+    "numTotalTests": 107,
+    "timestamp": 1789009438572,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 114,
+    "failedTests": 0,
+    "numTotalTests": 114,
+    "timestamp": 1789009543807,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 114,
+    "failedTests": 0,
+    "numTotalTests": 114,
+    "timestamp": 1789009676920,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar peso volumetrico (ciclo 18)",
+    "commitTimestamp": 1789009767266,
+    "testId": 17
   }
 ]
