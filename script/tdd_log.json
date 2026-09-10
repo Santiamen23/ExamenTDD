@@ -250,9 +250,39 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "15b912dae107a89e563e362eb6706fa8b6407e81",
     "commitName": "feat: permitir ingreso de peso volumetrico por unidad (ciclo 8)",
     "commitTimestamp": 1789000405695,
     "testId": 7
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1789000596082,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1789000701219,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1789000851862,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular costo de envio segun peso y cantidad (ciclo 9)",
+    "commitTimestamp": 1789000971783,
+    "testId": 8
   }
 ]

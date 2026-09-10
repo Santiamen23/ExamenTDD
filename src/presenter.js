@@ -5,9 +5,12 @@ import obtenerTasaImpuesto from "./impuesto.js";
 import { CATEGORIA_POR_DEFECTO } from "./categoria.js";
 import obtenerDescuentoCategoria from "./descuentoCategoria.js";
 import obtenerImpuestoAdicionalCategoria from "./impuestoCategoria.js";
+import conservarPesoVolumetrico from "./pesoVolumetrico.js";
+import { obtenerTarifaEnvio, calcularCostoEnvio } from "./envio.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
+const pesoVolumetrico = document.querySelector("#peso-volumetrico");
 const estado = document.querySelector("#estado");
 const categoria = document.querySelector("#categoria");
 const form = document.querySelector("#compra-form");
@@ -20,6 +23,8 @@ const resultadoDescuentoCategoria = document.querySelector(
 const resultadoImpuestoCategoria = document.querySelector(
   "#resultado-impuesto-categoria"
 );
+const resultadoTarifaEnvio = document.querySelector("#resultado-tarifa-envio");
+const resultadoCostoEnvio = document.querySelector("#resultado-costo-envio");
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
@@ -27,8 +32,12 @@ categoria.value = CATEGORIA_POR_DEFECTO;
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  const cantidadIngresada = Number(cantidad.value);
+  const pesoIngresado = conservarPesoVolumetrico(
+    Number(pesoVolumetrico.value)
+  );
   const precioNeto = calcularPrecioNeto(
-    Number(cantidad.value),
+    cantidadIngresada,
     Number(precioUnitario.value)
   );
 
@@ -40,4 +49,9 @@ form.addEventListener("submit", (event) => {
   );
   resultadoImpuestoCategoria.textContent =
     obtenerImpuestoAdicionalCategoria(categoria.value);
+  resultadoTarifaEnvio.textContent = obtenerTarifaEnvio(pesoIngresado);
+  resultadoCostoEnvio.textContent = calcularCostoEnvio(
+    cantidadIngresada,
+    pesoIngresado
+  );
 });

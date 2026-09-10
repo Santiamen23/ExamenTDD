@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "15b912dae107a89e563e362eb6706fa8b6407e81",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T00:33:22.000Z",
       "message": "feat: permitir ingreso de peso volumetrico por unidad (ciclo 8)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/15b912dae107a89e563e362eb6706fa8b6407e81"
     },
     "stats": {
       "total": 22,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T00:42:48.000Z",
+      "message": "feat: calcular costo de envio segun peso y cantidad (ciclo 9)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 93,
+      "additions": 92,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 59,
     "failed_tests": 0,
     "conclusion": "success"
   }
