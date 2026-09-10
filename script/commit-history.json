@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1e0d54837f1ace32462541fc7cb3953cf3c7d281",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T02:32:18.000Z",
       "message": "feat: calcular precio total de la compra (ciclo 14)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/1e0d54837f1ace32462541fc7cb3953cf3c7d281"
     },
     "stats": {
       "total": 121,
@@ -262,6 +262,25 @@
     },
     "coverage": 100,
     "test_count": 92,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T02:42:51.000Z",
+      "message": "feat: mostrar detalle completo del calculo de la compra (ciclo 15)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 112,
+      "additions": 107,
+      "deletions": 5,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 94,
     "failed_tests": 0,
     "conclusion": "success"
   }

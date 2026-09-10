@@ -14,6 +14,7 @@ import {
 } from "./descuentoEnvio.js";
 import obtenerDescuentoEspecial from "./beneficioEspecial.js";
 import calcularPrecioTotal from "./precioTotal.js";
+import crearDetalleVenta from "./detalleVenta.js";
 
 const cantidad = document.querySelector("#cantidad");
 const precioUnitario = document.querySelector("#precio-unitario");
@@ -41,6 +42,7 @@ const resultadoDescuentoEspecial = document.querySelector(
   "#resultado-descuento-especial"
 );
 const resultadoPrecioTotal = document.querySelector("#resultado-precio-total");
+const detalleCalculo = document.querySelector("#detalle-calculo");
 
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
@@ -85,12 +87,14 @@ form.addEventListener("submit", (event) => {
     precioNeto,
     categoria.value
   );
-  resultadoPrecioTotal.textContent = calcularPrecioTotal({
+  const datosVenta = {
     cantidad: cantidadIngresada,
     precioUnitario: Number(precioUnitario.value),
     estado: estado.value,
     categoria: categoria.value,
     pesoVolumetrico: pesoIngresado,
     tipoCliente: tipoCliente.value,
-  });
+  };
+  resultadoPrecioTotal.textContent = calcularPrecioTotal(datosVenta);
+  detalleCalculo.textContent = JSON.stringify(crearDetalleVenta(datosVenta));
 });

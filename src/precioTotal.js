@@ -4,10 +4,10 @@ import obtenerDescuentoCategoria from "./descuentoCategoria.js";
 import obtenerDescuentoEspecial from "./beneficioEspecial.js";
 import obtenerTasaImpuesto from "./impuesto.js";
 import obtenerImpuestoAdicionalCategoria from "./impuestoCategoria.js";
-import { calcularCostoEnvio } from "./envio.js";
+import { obtenerTarifaEnvio, calcularCostoEnvio } from "./envio.js";
 import { calcularDescuentoEnvio } from "./descuentoEnvio.js";
 
-function calcularPrecioTotal({
+function calcularComponentesVenta({
   cantidad,
   precioUnitario,
   estado,
@@ -32,11 +32,39 @@ function calcularPrecioTotal({
     obtenerImpuestoAdicionalCategoria(categoria);
   const impuestos =
     baseImponible * (tasaImpuestoEstado + tasaImpuestoCategoria);
+  const tarifaEnvio = obtenerTarifaEnvio(pesoVolumetrico);
   const envioBase = calcularCostoEnvio(cantidad, pesoVolumetrico);
   const descuentoEnvio = calcularDescuentoEnvio(envioBase, tipoCliente);
   const envioFinal = envioBase - descuentoEnvio;
 
-  return baseImponible + impuestos + envioFinal;
+  return {
+    cantidad,
+    precioUnitario,
+    precioNeto,
+    tasaDescuentoBase,
+    tasaDescuentoCategoria,
+    montoDescuentoPorcentual: descuentoPorcentual,
+    precioTrasDescuentos,
+    descuentoFijoEspecial,
+    baseImponible,
+    estado,
+    tasaImpuestoEstado,
+    categoria,
+    tasaImpuestoCategoria,
+    impuestos,
+    pesoVolumetrico,
+    tarifaEnvio,
+    envioBase,
+    tipoCliente,
+    descuentoEnvio,
+    envioFinal,
+    precioTotal: baseImponible + impuestos + envioFinal,
+  };
 }
 
+function calcularPrecioTotal(datos) {
+  return calcularComponentesVenta(datos).precioTotal;
+}
+
+export { calcularComponentesVenta };
 export default calcularPrecioTotal;
