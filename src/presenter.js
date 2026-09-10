@@ -23,6 +23,7 @@ import reiniciarCompra from "./limpiarCompra.js";
 import calcularMontoTotalAhorrado from "./ahorro.js";
 import formatearMoneda from "./formatearMoneda.js";
 import obtenerDatosEjemplo from "./datosEjemplo.js";
+import generarTextoDetalle from "./textoDetalle.js";
 
 const cantidad = document.querySelector("#cantidad");
 const errorCantidad = document.querySelector("#error-cantidad");
@@ -36,6 +37,7 @@ const tipoCliente = document.querySelector("#tipo-cliente");
 const form = document.querySelector("#compra-form");
 const cancelarButton = document.querySelector("#cancelar-button");
 const cargarEjemploButton = document.querySelector("#cargar-ejemplo-button");
+const copiarDetalleButton = document.querySelector("#copiar-detalle-button");
 const resultadoPrecioNeto = document.querySelector("#resultado-precio-neto");
 const resultadoDescuento = document.querySelector("#resultado-descuento");
 const resultadoImpuesto = document.querySelector("#resultado-impuesto");
@@ -62,6 +64,7 @@ const detalleCalculo = document.querySelector("#detalle-calculo");
 estado.value = ESTADO_POR_DEFECTO;
 categoria.value = CATEGORIA_POR_DEFECTO;
 tipoCliente.value = TIPO_CLIENTE_POR_DEFECTO;
+let ultimoDetalle = null;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -127,6 +130,7 @@ form.addEventListener("submit", (event) => {
     calcularPrecioTotal(datosVenta)
   );
   const detalle = crearDetalleVenta(datosVenta);
+  ultimoDetalle = detalle;
   resultadoAhorro.textContent = formatearMoneda(
     calcularMontoTotalAhorrado(detalle)
   );
@@ -151,6 +155,7 @@ form.addEventListener("submit", (event) => {
 
 cancelarButton.addEventListener("click", () => {
   const estadoInicial = reiniciarCompra();
+  ultimoDetalle = null;
 
   cantidad.value = estadoInicial.cantidad;
   precioUnitario.value = estadoInicial.precioUnitario;
@@ -191,4 +196,10 @@ cargarEjemploButton.addEventListener("click", () => {
   estado.value = datosEjemplo.estado;
   categoria.value = datosEjemplo.categoria;
   tipoCliente.value = datosEjemplo.tipoCliente;
+});
+
+copiarDetalleButton.addEventListener("click", () => {
+  if (ultimoDetalle) {
+    navigator.clipboard.writeText(generarTextoDetalle(ultimoDetalle));
+  }
 });

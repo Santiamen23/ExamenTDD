@@ -754,9 +754,47 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a77ec2fae2d09cf5eb8d6d3cdc04a8c64b0228f5",
     "commitName": "feat: cargar datos de ejemplo para una compra (ciclo 24)",
     "commitTimestamp": 1789013103314,
     "testId": 23
+  },
+  {
+    "numPassedTests": 139,
+    "failedTests": 0,
+    "numTotalTests": 139,
+    "timestamp": 1789013255820,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 139,
+    "failedTests": 0,
+    "numTotalTests": 139,
+    "timestamp": 1789013372753,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 0,
+    "numTotalTests": 141,
+    "timestamp": 1789013501755,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 0,
+    "numTotalTests": 141,
+    "timestamp": 1789013796714,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: permitir copiar el detalle del calculo (ciclo 25)",
+    "commitTimestamp": 1789013900631,
+    "testId": 24
   }
 ]

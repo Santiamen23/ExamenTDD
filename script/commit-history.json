@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a77ec2fae2d09cf5eb8d6d3cdc04a8c64b0228f5",
     "author": "Santiamen23",
     "commit": {
       "date": "2026-09-10T04:05:02.000Z",
       "message": "feat: cargar datos de ejemplo para una compra (ciclo 24)",
-      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/a77ec2fae2d09cf5eb8d6d3cdc04a8c64b0228f5"
     },
     "stats": {
       "total": 55,
@@ -452,6 +452,25 @@
     },
     "coverage": 100,
     "test_count": 139,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiamen23",
+    "commit": {
+      "date": "2026-09-10T04:18:19.000Z",
+      "message": "feat: permitir copiar el detalle del calculo (ciclo 25)",
+      "url": "https://github.com/Santiamen23/ExamenTDD/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 60,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 141,
     "failed_tests": 0,
     "conclusion": "success"
   }
